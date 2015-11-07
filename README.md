@@ -3,15 +3,18 @@
 Questa applirecazione è destinata alla comunità dei donatori di sangue di Cerreto Guidi.
 
 
-
 # Developed By
 
-Name: Nicola Brogelli<br>
-E-mail: developerandroidapplication@gmail.com<br>
-Subject: Avis Cerreto Guidi<br>
+<strong>Name:</strong> Nicola Brogelli<br>
+<strong>E-mail:</strong> <a href="mailto:developerandroidapplication@gmail.com" target="_top">developerandroidapplication@gmail.com</a> <br>
+<strong>Subject:</strong> Avis Cerreto Guidi<br>
 
 If I were to use or modify the application by making improvements in the code and functionality,<br> 
 I would appreciate that I inviaste changes so you can constantly update the repository.<br>
+
+# Library
+
+In this application, use two external libraries, <a target="_blank" href="https://github.com/rudsonlive/NavigationDrawer-MaterialDesign">Navigation Drawer</a> developed by Rudson Lima and <a target="_blank" href="https://github.com/square/picasso">Picasso</a>.
 
 # License
 
