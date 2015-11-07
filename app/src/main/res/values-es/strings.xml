@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Avis Cerreto Guidi</string>
+
+    <string name="sign_in">Sign in</string>
+
+    <string name="inbox">Inbox</string>
+    <string name="starred">Favorito</string>
+    <string name="sent_mail">Mensajes Enviados</string>
+    <string name="drafts">Borradores</string>
+    <string name="categories">Categorías</string>
+    <string name="trash">Papelera</string>
+    <string name="spam">Spam</string>
+    <string name="settings">Configuración</string>
+
+    <string name="add">Agregar</string>
+    <string name="search">Buscar</string>
+
+    <string name="important">Importante</string>
+    <string name="documents">Documentos</string>
+
+    <!-- Toast -->
+    <string name="open_user_profile">Abrir perfil de usuario</string>
+    <string name="open_settings">Abrir configuración</string>
+    <string name="action_settings">Ajuste</string>
+    <string name="associazione">Asociación</string>
+    <string name="booking">Reserva</string>
+    <string name="callus">Teléfono</string>
+    <string name="credits">Credits e Privacy</string>
+    <string name="manual">Manual de donantes</string>
+    <string name="membership">Asesoramiento</string>
+    <string name="meteo">El tiempo de la sangre</string>
+    <string name="news">New</string>
+    <string name="profilo">Perfilar</string>
+    <string name="sendmail">Enviar email</string>
+    <string name="sendsms">Enviar SMS</string>
+    <string name="site">Sitio Web</string>
+    <string name="title_activity_centro_trasfusionale">Detalle</string>
+    <string name="book">Libro</string>
+    <string name="title_activity_main">Avis Cerreto Guidi</string>
+
+</resources>

@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.PrenotazioneFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Passo 1: Selezionare il tipo di donazione"
+            android:layout_gravity="center"
+            android:id="@+id/textView2" />
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:id="@+id/Button_sangueintero"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="Dona Sangue Intero"
+            android:background="@drawable/button_selector" />
+
+        <Button
+            android:id="@+id/Button_plasma"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="Dona il Plasma"
+            android:background="@drawable/button_selector" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Passo 2: Selezionare la sede"
+            android:layout_gravity="center"
+            android:id="@+id/textView3" />
+
+
+        <Button
+            android:id="@+id/Button_send"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="Invia"
+            android:background="@drawable/button_selector" />
+
+    </LinearLayout>
+
+</FrameLayout>

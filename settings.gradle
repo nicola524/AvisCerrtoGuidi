@@ -1,0 +1,2 @@
+include ':app', ':NavigationDrawer7'
+project(':NavigationDrawer7').projectDir = new File('app/libs/NavigationDrawer7')

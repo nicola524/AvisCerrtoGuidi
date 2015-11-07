@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    tools:ignore="TypographyDashes"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- The Monitoring ID-->
+    <string name="ga_trackingId">UA-62543582-1</string>
+    <!-- Frequency for sampling -->
+    <string name="ga_sampleFrequency">90</string>
+</resources>

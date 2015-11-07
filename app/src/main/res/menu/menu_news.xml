@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.controller.MainActivity">
+
+    <item
+        android:id="@+id/menu_refresch_news"
+        android:icon="@mipmap/ic_autorenew_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Refresh"/>
+
+</menu>

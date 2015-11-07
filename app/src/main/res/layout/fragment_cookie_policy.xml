@@ -1,0 +1,164 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.CookiePolicyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- CONTENITORE GENERALE -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Cookie policy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Informativa sui Cookie"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Visualizzi questa pagina perchè aviscerretoguidi.it è responsabile della gestione tecnica dei cookie di questa App e del sito internet.
+I cookie sono piccole porzioni di dati che il server web fornisce al dispositivo di navigazione dell’utente (computer, tablet, samrtphone, ecc.) per consentire l’utilizzo dei nostri servizi. Inoltre le informazioni generate dall’uso dei cookie ci permettono di ottimizzare le pagine e le nostre infrastrutture tecniche, migliorando così la navigazione del sito e dell'App.
+Nel il sito nel l'App producono direttamente cookie di profilazione, cioè quei cookie che creano profili dell’utente e che vengono utilizzati per inviare messaggi pubblicitari in linea con le preferenze manifestate dall’utente attraverso le sue scelte di navigazione in rete.
+Il nostro sito e di conseguenza la nostra App possono contenere link, servizi, immagini o componenti multimediali di terze parti che possono generare a loro volta cookie sui quali non possiamo avere il controllo diretto.
+"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Cookie tecnici"/>
+
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="I cookie tecnici hanno l’unico scopo di garantire la trasmissione della comunicazione tra l’utente e il sito sulla rete Internet, nella misura strettamente necessaria ad assicurare la miglior qualità possibile del nostro servizio.
+I cookie generati direttamente dal nostro sito raccolgono dati che vengono memorizzati su server che si trovano sul territorio italiano. I dati correlati ai cookie sono gestiti unicamente all’interno del nostro sito e non sono ceduti a terzi.
+In particolare i cookie tecnici gestiti dal nostro sito, come singole informazioni o come dati aggregati possono essere utilizzati in tre modi:
+
+    per la generazione delle pagine web del sito: questi cookie sono essenziali per navigare in tutto il sito e utilizzare a pieno le sue funzionalità; per esempio consentono l’accesso alle aree dedicate ad utenti registrati, la registrazione al sito, il login, l’utilizzo di eventuale carrello elettronico e relativo modulo di pagamento online, etc. La semplice visualizzazione di una pagina e altri servizi necessari non possono essere fruiti senza questi cookie.
+    per l’analisi e la gestione delle prestazioni del sito: questi cookie raccolgono informazioni su come gli utenti utilizzano un sito web rilevando, ad esempio, quali sono le pagine più visitate o se sono stati generati messaggi di errore da pagine web, ma non raccolgono informazioni che identificano il visitatore. Tutte le informazioni raccolte tramite questi cookie sono aggregate e quindi anonime. Lo scopo è quello di migliorare il funzionamento di un sito web e l’esperienza di navigazione dei visitatori.
+    per la gestione e l’analisi delle funzionalità: questa tipologia di cookie consente di ricordare le scelte fatte dall’utente all’interno del nostro sito per fornire funzionalità personalizzate. Per esempio permettono di ricordare le modifiche apportate alla dimensione del testo. Possono anche essere utilizzati per fornire servizi richiesti dal visitatore come guardare un video o i commenti su un blog. Le informazioni raccolte da questi tipi di cookie sono rese anonime e non utilizzabili per monitorare la vostra attività di navigazione su altri siti web."
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Cookie e servizi di terze parti"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Sono presenti nel sito Web anche servizi e link di terze parti, ad esempio i pulsanti per YouTube e Facebook, che potenzialmente possono collocare cookie nel dispositivo elettronico dell’utente quando vengono cliccati.
+Si tenga presente che l’informativa sull’uso dei cookie non riguarda i link presenti nel sito Web che indirizzano a siti web di terzi. Si consiglia pertanto di leggere le informative sulla privacy presenti negli altri siti web visitati, consultando i link indicati più avanti.
+Per ulteriori informazioni relative a contenuti forniti da terzi e presenti nel nostro sito (link, immagini, componenti multimediali, ecc), leggere attentamente i paragrafi seguenti.
+Si desidera sottolineare come, Vicinivicini.com (d’ora in avanti “editore del sito”), non riceva alcuna informazione dai rispettivi provider o concessionari di servizi di terzi, relativa ai dati eventualmente recuperati dagli stessi. In alcuni casi saranno fornite unicamente statistiche aggregate, e quindi anonime, necessarie solo alla contabilizzazione dei servizi di terzi da noi acquistati.
+
+Google Analytics
+Questo sito web utilizza Google Analytics, un servizio di analisi web fornito da Google , Inc. ( “Google”). Le componenti di Google Analytics inserite nel nostro sito possono utilizzare dei cookie generati direttamente dai server di Google Inc e suoi partner. In qualità di editore del sito non siamo in grado di fornire un’informativa adeguata sull’uso dei cookie da parte del provider/concessionario del servizio.
+A riguardo consigliamo di visitare il seguente link: http://www.google.com/intl/it_ALL/analytics/learn/privacy.html
+Google Inc. mette a disposizione un plugin per alcuni browser che impedisce il rilevamento del cookie del servizio Google Analytics.
+Per maggiori informazioni visita il link: https://tools.google.com/dlpage/gaoptout?hl=it
+
+Pulsante e widget sociali di YouTube
+Nel sito sono inclusi video, pulsanti ed altri widget sociali del servizio YouTube di YouTube, LLC. Queste componenti possono utilizzare dei cookie generati direttamente dai server di Youtube e suoi partner. In qualità di editore non siamo in grado di fornire un’informativa adeguata sull’uso dei cookie da parte del provider/concessionario del servizio. A riguardo consigliamo di visitare il seguente link: https://support.google.com/youtube/answer/2407785?hl=it
+
+Pulsanti e widget sociali di Facebook
+Il sito Web contiene pulsanti e widget per la condivisione di contenuti sul social network Facebook, 1601 South California Avenue, Palo Alto, CA 94304, U.S.A. Queste componenti possono utilizzare dei cookie generati direttamente dai server di Facebook e suoi partner. In qualità di editore non siamo in grado di fornire un’informativa adeguata sull’uso dei cookie da parte del provider/concessionario del servizio. A riguardo consigliamo di visitare il seguente link: http://www.facebook.com/about/privacy/ (Opzione linguistica sul fondo pagina).
+
+Pulsanti e widget sociali di Twitter
+Il sito Web include anche funzioni per il provider Twitter, offerte da Twitter Inc., 795 Folsom St, Suite 600, San Francisco, CA 94107, U.S.A. Queste componenti possono utilizzare dei cookie generati direttamente dai server di Twitter e suoi partner. In qualità di editore non siamo in grado di fornire un’informativa adeguata sull’uso dei cookie da parte del provider/concessionario del servizio.
+A riguardo consigliamo di visitare il seguente link: http://twitter.com/privacy.
+Se si è utenti del servizio twitter è possibile modificare le impostazioni di tutela dei dati direttamente dal proprio account seguendo il link: http://twitter.com/account/settings.
+
+Pulsanti +1 widget sociali di Google+ (Google)
+Il sito Web include anche funzioni per il provider Google inc, in particolare il pulsante +1 e i widget sociali di Google+, servizi di interazione con il social network Google+, forniti da Google Inc. Queste componenti possono utilizzare dei cookie generati direttamente dai server di Google Inc e suoi partner. In qualità di editore non siamo in grado di fornire un’informativa adeguatada parte del provider/concessionario del servizio.
+A riguardo consigliamo di visitare il seguente link: http://www.google.com/intl/it/policies/privacy/.
+"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

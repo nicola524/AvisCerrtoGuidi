@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.IdoneitaAllaDonazioneFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- CINTENITORE GENERALE -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Idoneità alla donazione" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Elenco delle possibili condizioni che possono precludere alla donazione in via temporanea o definitiva. Per altre condizioni che potrebbero comportare la sospensione si rinvia alle vigenti leggi e alla discrezionalità del medico, ove esercitabile-"
+                    android:layout_gravity="left"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Fattori costituzionalli e\nfisiologici" />
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/Text_fattori"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Situazioni a rischio infettivo"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/Text_situazioni"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Malattie infettive" />
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:layout_gravity="left"
+                    android:id="@+id/Text_infettive" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Malattie non infettive e\nterapie" />
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:layout_gravity="left"
+                    android:id="@+id/Text_nonInfettive" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

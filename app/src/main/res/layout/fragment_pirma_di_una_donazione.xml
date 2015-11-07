@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.PirmaDiUnaDonazioneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- CINTENITORE GENERALE -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Prima di una donazione" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Il giorno della donazione"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Il giorn della donazione, sia l&apos;aspirante donatore che il donatore abituale:\n\na) Compila un questionario sanitario sul proprio stato di salute firmando il consenso informato al prelieco.\n\nb) Viene sottoposto a visita e colloquio medico valutandone pressione arteriosa, polso, valore dell&apos;emoglobina e la presenza di eventuali controindicazioni alla donazione e solo se questi controlli risultano nella norma, il donatore è ammesso nella sala prelievi per effettuare la donazione.\n\nDopo la donazione è indicata una piccola colazione."
+                    android:layout_gravity="right"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="La prima donazione"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="La prima volta che l&apos;aspirante donatore si presenta presso un punto di raccolta Avis o presso un centro trasfusionale:\n\na) Compila la domanda per entrare a far parte dell&apos;associzione.\n\nb) Viene sottoposto ad una visita medica.\n\nc)  Effettua un prelievo a digiuno per verificarne l&apos;idonietà.\n\n\nIn base agli esiti, il medico del Centro trasfusionale di riferimento, stabilirà l&apos;idonietà alla donazione (la prima donazione potrà essere di sangue intero oppure di plasma)."
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Come presentarsi alla donazione"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Colazione: Per la donazione mattutina: colazione a base di tè, succhi di frutta e spremute, un frutto, qualche biscotto secco. Non assumere latte, o suoi derivati, nè brioche.\n\nPranzo: Per la donazione pomeridiana: colazione leggera (vedi sopra) e pranzo leggereo a base di pasta in bianco (all&apos;olio) e insalata, oppure una fetta di carne ai ferri e insalata; un panino. Non assumere bevande alcoliche ne zuccherate."
+                    android:layout_gravity="right"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+            
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

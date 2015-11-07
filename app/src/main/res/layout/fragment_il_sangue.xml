@@ -1,0 +1,238 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.IlSangueFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- CINTENITORE GENERALE -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Il Sangue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Cose&apos;è"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Il sangue costituisce circa il 5-7% del volume corporeo e nel nostro organismo ne circolano, in media, 4/5 litri. Al suo movimento è legata la nostra vita."
+                    android:layout_gravity="left"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Globuli rossi"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Gli eritrociti o emazie hanno la funzione di trasportare l&apos;ossigeno ai tessuti eliminando l&apos;anidride carbonica. Presiedono alla regolazione dell&apos;equilibrio acido-base del sangue. Sono costituiti per il 65% di acqua e per il 35% di sostanze solide (95% di emoglobina e 5% di lipidi, enzimi). \n\nPosseggono sulla loro superficie gli antigeni dei gruppi sanguigni. \n\nIl numero dei globuli rossi, di media, va da 4,2 a 6 milioni per millimetro cubo."
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Globuli Bianchi"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Chiamati anche leucociti, hanno una funzione di difesa dell&apos;organismo. Alcuni servono a distruggere le sostanze estranee penetrate nell&apos;organismo; altri servono alla formazione di anticorpi.\n\nSono divisi in Granulociti, Linfociti e Monociti.\n\nI valori normali vanno da 4.000 a 10.000 per millimetro cubo."
+                    android:layout_gravity="left"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Piastrine"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Rappresenta la componente liquida del sangue, grazie alla quale le cellule sanguigne possono circolare. Il plasma è costituito prevalentemente da acqua (90%), nella quale sono disciolte e veicolate molte sostanze quali proteine, zuccheri, grassi, sali minerali, ormoni, vitamine, anticorpi e fattori della coagulazione."
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Plasma"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Chiamati anche leucociti, hanno una funzione di difesa dell&apos;organismo. Alcuni servono a distruggere le sostanze estranee penetrate nell&apos;organismo; altri servono alla formazione di anticorpi.\n\nSono divisi in Granulociti, Linfociti e Monociti.\n\nI valori normali vanno da 4.000 a 10.000 per millimetro cubo."
+                    android:layout_gravity="left"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Funzioni del sangue"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Le funzioni che il sangue esercita all&apos;interno dell’organismo sono:\n\nRespiratoria (scambio ossigeno/anidride carbonica).\n\nNutritizia (porta a tutte le cellule le sostanze nutrienti)\n\nEscretrice (raccoglie i rifiuti che convoglia agli organi destinati a distruggerli)\n\nTermoregolatrice (distribuisce il calore)\n\nRegola l&apos;equilibrio idrico (per mezzo del plasma)\n\nDifesa (trasporta i globuli bianchi e gli anticorpi)\n\nCoagulante, grazie all&apos;azione delle piastrine e dei fattori plasmatici della coagulazione"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Conservazione del sangue"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:paddingLeft="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="La conservazione del sangue si attua in maniera differente, a seconda del componente da trattare:\n\n\Il sangue intero e i concentrati di globuli rossi vengono conservati in appositi frigoriferi a una temperatura fra i +2°C e i +6°C, per un massimo di 35/42 giorni a seconda della soluzione additiva presente nella sacca. I globuli rossi possono essere conservati congelati a –80°C anche per mesi o anni.\n\nI concentrati di piastrine sono conservati a temperatura ambiente (+20/22°C) per un massimo di 5/7 giorni\n\nI concentrati di globuli bianchi devono essere utilizzati entro 12 ore dalla preparazione e conservati a temperatura ambiente.\n\nIl plasma viene congelato e, se conservato costantemente a temperatura inferiore a –30°C, può essere impiegato in un periodo massimo di 12 mesi.\n\nQuesti dati non sono fissi, ma evolvono in base al progresso delle applicazioni tecnologiche e vengono di volta in volta stabiliti da Decreti Ministeriali.\n\nDall’analisi di questo processo di conservazione particolarmente complesso e delicato emerge l’importanza che riveste un uso razionale e programmato del sangue, al fine di evitarne inutili sprechi."
+                    android:layout_gravity="left"
+                    android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

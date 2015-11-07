@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.controller.DetailActivity">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/splahlogo"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/webView"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewTitolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Attendere...."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/webView"
+        android:layout_alignStart="@+id/webView"
+        android:layout_alignRight="@+id/webView"
+        android:layout_alignEnd="@+id/webView" />
+
+    <WebView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBottom="@id/webView"
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share on Google+"
+        android:background="#DF5138"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
