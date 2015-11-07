@@ -18,7 +18,7 @@ In this application, use two external libraries, <a target="_blank" href="https:
 
 # License
 
-Copyright 2015 Brogelli Nicola
+<strong>Copyright</strong> 2015 Brogelli Nicola
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.<br>
 You may obtain a copy of the License at<br>
