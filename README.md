@@ -1,7 +1,7 @@
 # AvisCerrtoGuidi
 
 Questa applirecazione è destinata alla comunità dei donatori di sangue di Cerreto Guidi.<br>
-This app requires a min sdk ![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
+This app requires a min sdk [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
 
 # Developed By
