@@ -1,6 +1,7 @@
 # AvisCerrtoGuidi
 
-Questa applirecazione è destinata alla comunità dei donatori di sangue di Cerreto Guidi.<br>
+This application is intended for the community of blood donors of Cerreto Guidi . Potrari remain aggiorenato initiatives promoted by AVIS . Always have on hand the phone numbers useful for donors and more .
+
 This app requires a min sdk [![API](https://img.shields.io/badge/API-16%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=16)
 
 
