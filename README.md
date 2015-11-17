@@ -16,7 +16,7 @@ I would appreciate that I inviaste changes so you can constantly update the repo
 
 # Library
 
-In this application, use two external libraries, <a target="_blank" href="https://github.com/rudsonlive/NavigationDrawer-MaterialDesign">Navigation Drawer</a> developed by Rudson Lima and <a target="_blank" href="https://github.com/square/picasso">Picasso</a>.
+In this application, use two external libraries, <a target="_blank" href="https://github.com/rudsonlive/NavigationDrawer-MaterialDesign">Navigation Drawer</a> developed by Rudson Lima, <a target="_blank" href="https://github.com/square/picasso">Picasso</a> and <a target="_blank" href="https://github.com/PaoloRotolo/AppIntro">AppIntro</a>.
 
 # License
 
