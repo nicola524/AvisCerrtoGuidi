@@ -8,6 +8,7 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <!--
  The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but are recommended.
@@ -44,16 +45,14 @@
             android:label="Dettaglio"
             android:screenOrientation="portrait" >
         </activity>
+
+        <!-- AVVIO -->
         <activity
             android:name=".controller.MainActivity"
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait"
             android:theme="@style/nLiveoDrawer" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- Campaign Tracking -->
@@ -77,6 +76,20 @@
             android:label="@string/title_activity_centro_trasfusionale"
             android:screenOrientation="portrait">
         </activity>
+
+        <activity
+            android:name=".controller.MainIntro"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/nLiveoDrawer">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
