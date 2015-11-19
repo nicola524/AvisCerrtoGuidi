@@ -49,7 +49,25 @@
     <string name="title_activity_centro_trasfusionale">Dettaglio</string>
 
 
+
+
+    <!-- RISORSE PER AppIntro -->
+
+    <!-- TITOLI -->
+    <string name="titolo1">L\'Avis cammina con te</string>
+    <string name="titolo2">Chi dona sangue dona la vita</string>
+    <string name="titolo3">AVIS... ce l\'ho nel sangue</string>
+    <string name="titolo4">Dai il meglio di te stesso</string>
+
+    <!-- DESCRIZIONI -->
+    <string name="descrizone1">L\'Avis cammina con te</string>
+    <string name="descrizione2">Chi dona sangue dona la vita</string>
+    <string name="descrizione3">Dai il meglio di te stesso</string>
+
+    <!-- MESSAGGI -->
     <string name="skip">Y U DO DIS TO ME?</string>
+
+
 
 
 </resources>
