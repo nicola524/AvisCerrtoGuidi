@@ -11,6 +11,6 @@ public class MainApplication extends Application {
         super.onCreate();
 
         // We initialize the Tracking
-        Track.get(this);
+        //Track.get(this);
     }
 }
