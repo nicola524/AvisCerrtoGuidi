@@ -3,7 +3,7 @@
     tools:ignore="TypographyDashes"
     xmlns:tools="http://schemas.android.com/tools">
     <!-- The Monitoring ID-->
-    <string name="ga_trackingId">UA-62543582-1</string>
+    <string name="ga_trackingId">UA-61555157-5</string>
     <!-- Frequency for sampling -->
     <string name="ga_sampleFrequency">90</string>
 </resources>
