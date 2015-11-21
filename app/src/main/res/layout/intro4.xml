@@ -17,7 +17,7 @@
         android:textColor="#ffffff"
         android:paddingRight="32dp"
         android:textSize="28sp"
-        android:text="Dai il Meglio di Te Stesso"/>
+        android:text="@string/titolo4"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -46,7 +46,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:onClick="getStarted"
-        android:text="INIZIAMO"/>
+        android:text="@string/iniziamo"/>
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="64dp" />
