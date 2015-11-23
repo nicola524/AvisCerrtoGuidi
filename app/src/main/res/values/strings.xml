@@ -55,18 +55,19 @@
 
     <!-- TITOLI -->
     <string name="titolo1" translatable="false">L\'Avis cammina con te</string>
-    <string name="titolo2" translatable="false">Chi dona sangue dona la vita</string>
-    <string name="titolo3" translatable="false">AVIS... ce l\'ho nel sangue</string>
+    <string name="titolo2" translatable="false">Dona il sangue salva una vita</string>
+    <string name="titolo3" translatable="false">Dona sangue per chi dona la vita</string>
     <string name="titolo4" translatable="false">Dai il meglio di te stesso</string>
 
     <!-- DESCRIZIONI -->
     <string name="descrizone1" translatable="false">L\'Avis cammina con te</string>
-    <string name="descrizione2" translatable="false">Chi dona sangue dona la vita</string>
-    <string name="descrizione3" translatable="false">Dai il meglio di te stesso</string>
+    <string name="descrizione2" translatable="false">Dona il sangue salva una vita</string>
+    <string name="descrizione3" translatable="false">Dona sangue per chi dona la vita</string>
 
     <!-- MESSAGGI -->
     <string name="skip">Y U DO DIS TO ME?</string>
     <string name="iniziamo" translatable="false">Iniziamo</string>
+
 
 
 </resources>

@@ -33,4 +33,11 @@
     <string name="title_activity_centro_trasfusionale">Dettaglio</string>
     <string name="title_activity_main">Avis Cerreto Guidi</string>
     <string name="skip">Y U DO DIS TO ME?</string>
+    <string name="pref_sync_frequency">Frequenza di Aggiornamento</string>
+    <string name="pref_sync_frequency_summary">Imposta frequenza di Aggiornamento</string>
+    <string name="pref_update_setting">Aggiorna</string>
+    <string name="pref_user_name">Imposta Nome Utente</string>
+    <string name="pref_user_name_summary">Imposta il tuo profilo</string>
+    <string name="pref_user_profile">Profilo utente</string>
+    <string name="pref_send_report">Invia crash report</string>
 </resources>

@@ -15,40 +15,29 @@
  */
 package it.nicolabrogelli.aviscerrtoguidi.controller;
 
-import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
-import android.widget.TextView;
 
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceFragment;
 import it.nicolabrogelli.aviscerrtoguidi.R;
 
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_main);
+        getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
+    }
 
-        TextView mTxtTitle = (TextView) findViewById(R.id.txtTitle);
-        mTxtTitle.setText(getString(R.string.settings));
-
-        ActionBar actionBar = getSupportActionBar();
-
-        if (actionBar != null){
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeButtonEnabled(true);
+    public static class SettingsFragment extends PreferenceFragment
+    {
+        @Override
+        public void onCreate(final Bundle savedInstanceState)
+        {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.settings);
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

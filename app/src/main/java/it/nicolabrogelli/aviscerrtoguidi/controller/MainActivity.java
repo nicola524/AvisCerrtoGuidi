@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
@@ -104,7 +106,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         mHelpLiveo.add(getString(R.string.booking), R.mipmap.ic_insert_invitation_black_24dp);
         mHelpLiveo.addSeparator(); // Item separator
         mHelpLiveo.add(getString(R.string.site), R.mipmap.ic_public_black_24dp);
-        //mHelpLiveo.add(getString(R.string.credits), R.mipmap.ic_info_outline_black_24dp);
+        mHelpLiveo.add(getString(R.string.credits), R.mipmap.ic_info_outline_black_24dp);
 
         //{optional} - Header Customization - method customHeader
 //        View mCustomHeader = getLayoutInflater().inflate(R.layout.custom_header_user, this.getListView(), false);
@@ -126,7 +128,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                         //.colorLineSeparator(R.color.nliveo_blue_colorPrimary)
 
                 //.footerItem(R.string.settings, R.mipmap.ic_settings_black_24dp)
-                        .footerItem(R.string.credits, R.mipmap.ic_info_outline_black_24dp)
+                        .footerItem(R.string.settings, R.mipmap.ic_settings_black_24dp)
 
 
                                 //{optional} - Header Customization
@@ -233,7 +235,9 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                     this.userName.setText(currentPerson.getDisplayName());
 
                 }
-            } catch (NullPointerException ex) {}
+            } catch (NullPointerException ex) {
+                Log.i(TAG, ex.toString());
+            }
         } else {
             Toast t = Toast.makeText(this, "Si è verifiacto un errore nel recuperare le informazioni da G+", Toast.LENGTH_LONG);
             t.show();
@@ -338,6 +342,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                 MainActivity.this.setTitle(getString(R.string.credits));
                 break;
 
+
             default:
                 mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
                 MainActivity.this.setTitle(R.string.app_name);
@@ -372,14 +377,16 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
     private View.OnClickListener onClickFooter = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            //startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
+            startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
 
+            /*
             Fragment mFragment;
             FragmentManager mFragmentManager = getSupportFragmentManager();
 
             mFragment = new PlusOneFragment();
             mFragmentManager.beginTransaction().replace(R.id.container, mFragment).commit();
             MainActivity.super.setTitle(R.string.credits);
+            */
 
             closeDrawer();
         }
