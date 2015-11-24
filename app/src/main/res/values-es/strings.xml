@@ -47,5 +47,18 @@
     <string name="pref_sync_frequency">Frecuencia de actualización</string>
     <string name="pref_sync_frequency_summary">Establezca la frecuencia de actualización</string>
     <string name="pref_send_report">Enviar informe de errores</string>
+    <string name="pref_title_vibrate" translatable="false">Vibrazione</string>
+    <string name="titolo1">Los paseos con Avis</string>
+    <string name="titolo2">Donar sangre salva una vida</string>
+    <string name="titolo3">Donar sangre para alguien que da la vida</string>
+    <string name="titolo4">De lo mejor de ti</string>
+    <string name="descrizione2" translatable="false">Donar sangre salva una vida</string>
+    <string name="descrizione3" translatable="false"> Donar sangre para alguien que da la vida</string>
+    <string name="descrizone1">El Avis va contigo</string>
+    <string name="iniziamo" translatable="false">Comenzamos</string>
+    <string name="pref_ringtone_silent" translatable="false">Silencio</string>
+    <string name="pref_header_notifications" translatable="false">Notificaciones</string>
+    <string name="pref_header_general">General</string>
+    <string name="wait">Espere ....</string>
 
 </resources>
