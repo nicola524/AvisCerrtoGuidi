@@ -16,6 +16,8 @@ import it.nicolabrogelli.aviscerrtoguidi.fragment.SampleSlide;
 
 public class MainIntro extends AppIntro {
 
+    SharedPreferences SP;
+
     @Override
     public void init(@Nullable Bundle savedInstanceState) {
         addSlide(SampleSlide.newInstance(R.layout.intro));
@@ -23,7 +25,7 @@ public class MainIntro extends AppIntro {
         addSlide(SampleSlide.newInstance(R.layout.intro3));
         addSlide(SampleSlide.newInstance(R.layout.intro4));
 
-        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
         String strUserName = SP.getString("username", "NA");
         boolean bAppQuickStart = SP.getBoolean("applicationQuickStart", false);
 
@@ -45,7 +47,11 @@ public class MainIntro extends AppIntro {
     @Override
     public void onSkipPressed() {
         loadMainActivity();
-        //Toast.makeText(getApplicationContext(), getString(R.string.skip), Toast.LENGTH_SHORT).show();
+        SharedPreferences.Editor editor = SP.edit();
+        editor.putBoolean("applicationQuickStart", true);
+        Boolean flag =  editor.commit();
+        //if(flag)
+        //    Toast.makeText(getApplicationContext(), getString(R.string.skip), Toast.LENGTH_SHORT).show();
     }
 
     @Override
