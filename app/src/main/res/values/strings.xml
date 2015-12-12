@@ -19,7 +19,7 @@
     <string name="search">Search</string>
     <string name="important">Important</string>
     <string name="documents">Documents</string>
-    <string name="news">News</string>
+    <string name="news">News for Avis Cerreto Guidi</string>
     <string name="booking">Booking</string>
     <string name="meteo">Weather blood</string>
     <string name="profilo">Profile</string>
@@ -132,6 +132,8 @@
     <string name="pref_user_profile">Profilo utente</string>
     <string name="pref_user_name_summary">Imposta il tuo profilo</string>
     <string name="wait">Wait ....</string>
+    <string name="load_news">Wait loading news</string>
+    <string name="centri_trasfusionali">Blood Center</string>
 
 
 </resources>

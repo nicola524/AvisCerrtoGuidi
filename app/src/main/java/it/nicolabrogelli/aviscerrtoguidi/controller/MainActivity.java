@@ -32,6 +32,7 @@ import it.nicolabrogelli.aviscerrtoguidi.fragment.ConsiglioFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.NewsFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.PrenotazioneFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.WebFragment;
+import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.ChangeLogFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.ChiPuoDonareFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.ComeDonareFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.ManualeDonatoreFragment;
@@ -62,6 +63,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         CentriTrasfusionaliFragment.OnFragmentInteractionListener,
         PlusOneFragment.OnFragmentInteractionListener,
         CookiePolicyFragment.OnFragmentInteractionListener,
+        ChangeLogFragment.OnFragmentInteractionListener,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
@@ -318,7 +320,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
 
             case 5:
                 mFragment = new CentriTrasfusionaliFragment();
-                MainActivity.this.setTitle("Centri Trasfusionali");
+                MainActivity.this.setTitle(R.string.centri_trasfusionali);
                 break;
 
             case 6:
@@ -328,8 +330,10 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
 
             case 8:
                 //mFragment = new PrenotazioneFragment();
-                mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
-                MainActivity.this.setTitle(getString(R.string.booking));
+                //mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
+                //MainActivity.this.setTitle(getString(R.string.booking));
+                mFragment = new ChangeLogFragment();
+                MainActivity.this.setTitle("Changelog");
                 break;
 
             case 10:

@@ -31,7 +31,7 @@
     <string name="manual">Manual de donantes</string>
     <string name="membership">Asesoramiento</string>
     <string name="meteo">El tiempo de la sangre</string>
-    <string name="news">New</string>
+    <string name="news">Noticias de Avis Cerreto Guidi</string>
     <string name="profilo">Perfilar</string>
     <string name="sendmail">Enviar email</string>
     <string name="sendsms">Enviar SMS</string>
@@ -60,5 +60,7 @@
     <string name="pref_header_notifications" translatable="false">Notificaciones</string>
     <string name="pref_header_general">General</string>
     <string name="wait">Espere ....</string>
+    <string name="load_news"> Espere noticias carga</string>
+    <string name="centri_trasfusionali">Centro de Sangre</string>
 
 </resources>

@@ -216,7 +216,7 @@ public class NewsFragment extends Fragment  {
 
         @Override
         protected void onPreExecute(){
-            Toast t = Toast.makeText(getActivity(), "Attendere caricamento news", Toast.LENGTH_LONG);
+            Toast t = Toast.makeText(getActivity(), getResources().getString(R.string.load_news), Toast.LENGTH_LONG);
             t.show();
         }
 

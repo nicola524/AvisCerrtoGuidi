@@ -5,7 +5,7 @@
     <string name="spam">Spam</string>
     <string name="sent_mail">Invia email</string>
     <string name="meteo">Meteo del Sangue</string>
-    <string name="news">News</string>
+    <string name="news">News da Avis Cerreto Guidi</string>
     <string name="profilo">Profilo</string>
     <string name="search">Ricerca</string>
     <string name="sendsms">Invia SMS</string>
@@ -53,4 +53,6 @@
     <string name="pref_header_notifications" translatable="false">Notifiche</string>
     <string name="pref_header_general" translatable="false">Generali</string>
     <string name="wait">Attendere....</string>
+    <string name="load_news">Attendere caricamento news</string>
+    <string name="centri_trasfusionali">Centri Trasfusionali</string>
 </resources>
