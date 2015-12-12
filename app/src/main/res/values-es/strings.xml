@@ -62,5 +62,6 @@
     <string name="wait">Espere ....</string>
     <string name="load_news"> Espere noticias carga</string>
     <string name="centri_trasfusionali">Centro de Sangre</string>
+    <string name="about_ok">OK</string>
 
 </resources>

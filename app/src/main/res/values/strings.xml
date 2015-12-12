@@ -136,4 +136,8 @@
     <string name="centri_trasfusionali">Blood Center</string>
 
 
+    <string name="changelog_title_standarddialog" translatable="false">Changelog Avis Cerreto Guidi</string>
+    <string name="about_ok">OK</string>
+
+
 </resources>

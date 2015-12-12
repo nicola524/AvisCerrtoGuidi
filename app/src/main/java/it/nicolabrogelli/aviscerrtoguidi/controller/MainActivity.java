@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
-import android.content.SharedPreferences;
 import android.net.Uri;
-import android.preference.PreferenceManager;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -46,7 +46,6 @@ import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.PercheDonareFragmen
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.PirmaDiUnaDonazioneFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.PlusOneFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.TipologieDiDonazioneFragment;
-import it.nicolabrogelli.aviscerrtoguidi.model.CentroTrasfusionale;
 
 public class MainActivity extends NavigationLiveo implements OnItemClickListener,
         PercheDonareFragment.OnFragmentInteractionListener,
@@ -63,7 +62,6 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         CentriTrasfusionaliFragment.OnFragmentInteractionListener,
         PlusOneFragment.OnFragmentInteractionListener,
         CookiePolicyFragment.OnFragmentInteractionListener,
-        ChangeLogFragment.OnFragmentInteractionListener,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
@@ -332,8 +330,8 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                 //mFragment = new PrenotazioneFragment();
                 //mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
                 //MainActivity.this.setTitle(getString(R.string.booking));
-                mFragment = new ChangeLogFragment();
-                MainActivity.this.setTitle("Changelog");
+                mFragment =null;
+                openDialogFragment(new ChangeLogFragment());
                 break;
 
             case 10:
@@ -416,6 +414,23 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                     .build();
 
             mGoogleApiClient.connect();
+        }
+    }
+
+    /**
+     * Opens the dialog
+     *
+     * @param dialogStandardFragment
+     */
+    private void openDialogFragment(DialogFragment dialogStandardFragment) {
+        if (dialogStandardFragment != null) {
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            Fragment prev = fm.findFragmentByTag("changelogdemo_dialog");
+            if (prev != null) {
+                ft.remove(prev);
+            }
+            dialogStandardFragment.show(ft, "changelogdemo_dialog");
         }
     }
 }
