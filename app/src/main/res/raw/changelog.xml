@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog bulletedList="true">
 
-
     <changelogversion versionName="0.9" changeDate="Dic 12,2015">
         <changelogtext>[b]New![/b] Implementazione del changelog per la nostra applicazione</changelogtext>
         <changelogtext>Risoluzione di alcuni bug.</changelogtext>
@@ -9,7 +8,7 @@
 
     <changelogversion versionName="0.8" changeDate="Dic 05,2015">
         <changelogtext>Implementazione dell'intro</changelogtext>
-        <changelogtext>Correzione di alcuni bugr</changelogtext>
+        <changelogtext>Correzione di alcuni bug</changelogtext>
     </changelogversion>
 
     <changelogversion versionName="1.0" changeDate="Set 01,2015">

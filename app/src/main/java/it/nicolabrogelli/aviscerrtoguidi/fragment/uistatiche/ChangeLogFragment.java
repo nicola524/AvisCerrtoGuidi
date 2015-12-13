@@ -36,7 +36,5 @@ public class ChangeLogFragment extends DialogFragment {
                         }
                 )
                 .create();
-
-
     }
 }

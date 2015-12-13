@@ -73,23 +73,6 @@ public class PrenotazioneFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_prenotazione, container, false);
 
-        Button invioEmail = (Button) view.findViewById(R.id.Button_send);
-        invioEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                /*
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
-                i.putExtra(Intent.EXTRA_EMAIL, "info@muaythaifirenze.it");
-                i.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-                i.putExtra (Intent.EXTRA_TEXT, "Body of E-mail");
-                startActivity(i);
-                */
-
-
-            }
-        });
 
 
         return view;

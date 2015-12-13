@@ -128,20 +128,20 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                         //.colorLineSeparator(R.color.nliveo_blue_colorPrimary)
 
                 //.footerItem(R.string.settings, R.mipmap.ic_settings_black_24dp)
-                        .footerItem(R.string.settings, R.mipmap.ic_settings_black_24dp)
+                .footerItem(R.string.settings, R.mipmap.ic_settings_black_24dp)
 
 
-                                //{optional} - Header Customization
-                                //.customHeader(mCustomHeader)
+                    //{optional} - Header Customization
+                    //.customHeader(mCustomHeader)
 
-                                //{optional} - Footer Customization
-                                //.footerNameColor(R.color.nliveo_blue_colorPrimary)
-                                //.footerIconColor(R.color.nliveo_blue_colorPrimary)
-                                //.footerBackground(R.color.nliveo_white)
+                    //{optional} - Footer Customization
+                    //.footerNameColor(R.color.nliveo_blue_colorPrimary)
+                    //.footerIconColor(R.color.nliveo_blue_colorPrimary)
+                    //.footerBackground(R.color.nliveo_white)
 
-                                .setOnClickUser(onClickPhoto)
-                                .setOnPrepareOptionsMenu(onPrepare)
-                                .setOnClickFooter(onClickFooter)
+                    .setOnClickUser(onClickPhoto)
+                    .setOnPrepareOptionsMenu(onPrepare)
+                    .setOnClickFooter(onClickFooter)
                 .build();
 
         int position = this.getCurrentPosition();
@@ -327,11 +327,10 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                 break;
 
             case 8:
-                //mFragment = new PrenotazioneFragment();
-                //mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
+                mFragment = new PrenotazioneFragment();
+                mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
                 //MainActivity.this.setTitle(getString(R.string.booking));
-                mFragment =null;
-                openDialogFragment(new ChangeLogFragment());
+
                 break;
 
             case 10:
@@ -369,9 +368,12 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         @Override
         public void onClick(View v) {
 
-            //reconnectionGooglePlus();
+            Fragment mFragment;
+            FragmentManager mFragmentManager = getSupportFragmentManager();
+            mFragment =null;
+            openDialogFragment(new ChangeLogFragment());
 
-            Toast.makeText(getApplicationContext(), "onClickPhoto :D", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "onClickPhoto :D", Toast.LENGTH_SHORT).show();
             closeDrawer();
         }
     };
@@ -380,15 +382,6 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         @Override
         public void onClick(View v) {
             startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
-
-            /*
-            Fragment mFragment;
-            FragmentManager mFragmentManager = getSupportFragmentManager();
-
-            mFragment = new PlusOneFragment();
-            mFragmentManager.beginTransaction().replace(R.id.container, mFragment).commit();
-            MainActivity.super.setTitle(R.string.credits);
-            */
 
             closeDrawer();
         }
