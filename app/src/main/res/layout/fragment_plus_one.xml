@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlusOneFragment">
+    tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.PlusOneFragment">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -81,13 +81,20 @@
             android:layout_gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/Button_privacy"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
                 android:text="Privacy"/>
+
+            <Button
+                android:id="@+id/Button_changlog"
+                android:visibility="gone"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="ChangeLog"/>
 
         </LinearLayout>
 

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 import com.github.paolorotolo.appintro.AppIntro;
 
+import it.nicolabrogelli.aviscerrtoguidi.BuildConfig;
 import it.nicolabrogelli.aviscerrtoguidi.R;
 import it.nicolabrogelli.aviscerrtoguidi.controller.MainActivity;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.SampleSlide;
@@ -36,7 +37,7 @@ public class MainIntro extends AppIntro {
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         }
         else {
-            
+
         }
 
     }

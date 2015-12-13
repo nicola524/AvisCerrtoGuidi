@@ -32,6 +32,7 @@ public class PlusOneFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private Button buttonPrivacy;
+    private Button buttonChangeLog;
 
     // The URL to +1.  Must be a valid URL.
     private final String PLUS_ONE_URL = "http://www.aviscerretoguidi.it/";
@@ -94,6 +95,15 @@ public class PlusOneFragment extends Fragment {
             }
         });
 
+        buttonChangeLog = (Button) view.findViewById(R.id.Button_changlog);
+        buttonChangeLog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+            }
+        });
+
         return view;
     }
 
@@ -143,5 +153,7 @@ public class PlusOneFragment extends Fragment {
         // TODO: Update argument type and name
         public void onFragmentInteraction(Uri uri);
     }
+
+
 
 }
