@@ -368,9 +368,9 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         @Override
         public void onClick(View v) {
 
-            Fragment mFragment;
-            FragmentManager mFragmentManager = getSupportFragmentManager();
-            mFragment =null;
+            //Fragment mFragment;
+            //FragmentManager mFragmentManager = getSupportFragmentManager();
+            //mFragment = null;
             openDialogFragment(new ChangeLogFragment());
 
             //Toast.makeText(getApplicationContext(), "onClickPhoto :D", Toast.LENGTH_SHORT).show();
