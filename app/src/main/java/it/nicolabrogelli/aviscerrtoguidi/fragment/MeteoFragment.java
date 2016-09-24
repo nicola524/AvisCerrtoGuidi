@@ -1,45 +1,46 @@
 package it.nicolabrogelli.aviscerrtoguidi.fragment;
 
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
-
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-
-import android.os.Bundle;
-import android.support.v7.widget.SearchView;
-import android.util.Base64;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import it.nicolabrogelli.aviscerrtoguidi.R;
 import it.nicolabrogelli.aviscerrtoguidi.model.Notifica;
@@ -107,7 +108,7 @@ public class MeteoFragment extends Fragment {
         mytoast.show();
         */
 
-
+        handleSSLHandshake();
         new LongOperation().execute();
 
         rootView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -203,13 +204,13 @@ public class MeteoFragment extends Fragment {
             Document doc = null;
 
             try {
-                doc = Jsoup.parse(new URL("https://web.e.toscana.it/crs/meteo/"), 2000);   //http://www.bits4beats.it/
+                doc = Jsoup.parse(new URL("https://web2.e.toscana.it/crs/meteo/"), 2000);   //http://www.bits4beats.it/
 
                 int idx = 1;
                 Elements resultImg = doc.select("a img");
                 for (Element link : resultImg) {
                     Notifica n = new Notifica();
-                    n.set_Link(downloadBitmap("https://web.e.toscana.it/crs/meteo/" + link.attr("src")));
+                    n.set_Link(downloadBitmap("https://web2.e.toscana.it/crs/meteo/" + link.attr("src")));
                     lista.add(n);
                     n = null;
                     idx+=10;
@@ -364,6 +365,9 @@ public class MeteoFragment extends Fragment {
 
         return null;
     }
+
+    /** * Enables https connections */
+    @SuppressLint("TrulyRandom") public static void handleSSLHandshake() { try { TrustManager[] trustAllCerts = new TrustManager[]{new X509TrustManager() { public X509Certificate[] getAcceptedIssuers() { return new X509Certificate[0]; } @Override public void checkClientTrusted(X509Certificate[] certs, String authType) { } @Override public void checkServerTrusted(X509Certificate[] certs, String authType) { } }}; SSLContext sc = SSLContext.getInstance("SSL"); sc.init(null, trustAllCerts, new SecureRandom()); HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory()); HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() { @Override public boolean verify(String arg0, SSLSession arg1) { return true; } }); } catch (Exception ignored) { } }
 
 
 }

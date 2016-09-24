@@ -32,7 +32,8 @@
             android:layout_gravity="center"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:src="@mipmap/ic_slide1"/>
+            android:src="@mipmap/ic_slide1"
+            android:contentDescription="@string/content_image_description"/>
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"

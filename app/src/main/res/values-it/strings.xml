@@ -42,18 +42,34 @@
     <string name="pref_send_report">Invia crash report</string>
     <string name="pref_title_vibrate">Vibración</string>
     <string name="titolo4">Dai il meglio di te </string>
-    <string name="titolo3" translatable="false">Dona sangue per chi dona la vita</string>
-    <string name="titolo2" translatable="false">Dona il sangue salva una vita</string>
+    <string name="titolo3" >Dona sangue per chi dona la vita</string>
+    <string name="titolo2" >Dona il sangue salva una vita</string>
     <string name="titolo1">L\'Avis cammina con te</string>
-    <string name="descrizione2" translatable="false">Dona il sangue salva una vita</string>
-    <string name="descrizione3" translatable="false">Dona sangue per chi dona la vita</string>
-    <string name="descrizone1" translatable="false">L\'Avis cammina con te</string>
-    <string name="iniziamo" translatable="false">Iniziamo</string>
-    <string name="pref_ringtone_silent" translatable="false">Silenzioso</string>
-    <string name="pref_header_notifications" translatable="false">Notifiche</string>
-    <string name="pref_header_general" translatable="false">Generali</string>
+    <string name="descrizione2" >Dona il sangue salva una vita</string>
+    <string name="descrizione3" >Dona sangue per chi dona la vita</string>
+    <string name="descrizone1" >L\'Avis cammina con te</string>
+    <string name="iniziamo" >Iniziamo</string>
+    <string name="pref_ringtone_silent" >Silenzioso</string>
+    <string name="pref_header_notifications" >Notifiche</string>
+    <string name="pref_header_general" >Generali</string>
     <string name="wait">Attendere....</string>
     <string name="load_news">Attendere caricamento news</string>
     <string name="centri_trasfusionali">Centri Trasfusionali</string>
     <string name="about_ok">OK</string>
+    <string name="centro_trasfusionale">Centro Trasfusionale</string>
+    <string name="centro_trasfusionale_ciita">Città</string>
+    <string name="centro_trasfusionale_via">Via</string>
+    <string name="centro_trasfusionale_fax">055</string>
+    <string name="centro_trasfusionale_telefono">055</string>
+    <string name="content_share_on_google">Share on Google+</string>
+    <string name="donazione_perche_donare">Perchè donare</string>
+    <string name="donazione_chi_puo_donare">Chi può donare</string>
+    <string name="donazione_idoneita">Idonietà alla donazione</string>
+    <string name="donazione_come_donare">Come donare</string>
+    <string name="donazione_prima_di_donare">Prima di una donazione</string>
+    <string name="donazione_tipologie">Tipologie di donazione</string>
+    <string name="donazione_il_sangue">Il Sangue</string>
+    <string name="prenotazione_chiamaci">Chiamaci</string>
+    <string name="prenotazione_email">Mandaci una email</string>
+    <string name="prenotazione_sms">Invia un SMS</string>
 </resources>

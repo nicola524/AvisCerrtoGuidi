@@ -1,18 +1,25 @@
 package it.nicolabrogelli.aviscerrtoguidi.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+
 import it.nicolabrogelli.aviscerrtoguidi.R;
 import it.nicolabrogelli.aviscerrtoguidi.model.Post;
+
 
 /**
  * Created by Nicola on 27/09/2015.
@@ -79,8 +86,34 @@ public class RecycleAdapterNews extends RecyclerView.Adapter<NewsViewHolder> {
     public void onBindViewHolder(NewsViewHolder holder, int position) {
 
         try {
+
+
             Post post  = posts.get(0).get().get(position);
-            Picasso.with(context).load(posts.get(0).get().get(position).get_ProfileImageUrl()).fit().centerCrop().into(holder.Immagine);
+            Uri uri = Uri.parse(posts.get(0)
+                    .get()
+                    .get(position)
+                    .get_ProfileImageUrl());
+
+
+            OkHttpClient okHttpClient = new OkHttpClient();
+            Picasso.Builder picassoBuilder = new Picasso.Builder(context);
+            picassoBuilder = new Picasso.Builder(context)
+                    .downloader(new OkHttpDownloader(okHttpClient));
+
+            Picasso picasso = picassoBuilder.build();
+
+            picasso
+                    .load(uri)
+                    .resize(500, 500)
+                    .into(holder.Immagine);
+
+
+            /*
+            Picasso.with(context)
+                    .load(uri)
+                    .fit().centerCrop()
+                    .into(holder.Immagine);*/
+
             holder.Titolo.setText(posts.get(0).get().get(position).get_TITLE());
             holder.Riassunto.setText(android.text.Html.fromHtml(posts.get(0).get().get(position).get_EXCERPT()));
             holder.Contenuto = posts.get(0).get().get(position).get_CONTENT();

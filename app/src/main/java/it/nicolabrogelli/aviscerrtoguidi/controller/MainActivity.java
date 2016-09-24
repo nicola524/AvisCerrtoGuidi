@@ -5,10 +5,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.Menu;
@@ -23,22 +23,22 @@ import com.google.android.gms.plus.model.people.Person;
 import com.squareup.picasso.Picasso;
 
 import br.liveo.Model.HelpLiveo;
-import br.liveo.interfaces.OnPrepareOptionsMenuLiveo;
-import it.nicolabrogelli.aviscerrtoguidi.R;
 import br.liveo.interfaces.OnItemClickListener;
+import br.liveo.interfaces.OnPrepareOptionsMenuLiveo;
 import br.liveo.navigationliveo.NavigationLiveo;
+import it.nicolabrogelli.aviscerrtoguidi.R;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.CentriTrasfusionaliFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.ConsiglioFragment;
+import it.nicolabrogelli.aviscerrtoguidi.fragment.MainFragment;
+import it.nicolabrogelli.aviscerrtoguidi.fragment.ManualeDonatoreFragment;
+import it.nicolabrogelli.aviscerrtoguidi.fragment.MapsFragment;
+import it.nicolabrogelli.aviscerrtoguidi.fragment.MeteoFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.NewsFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.PrenotazioneFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.WebFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.ChangeLogFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.ChiPuoDonareFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.ComeDonareFragment;
-import it.nicolabrogelli.aviscerrtoguidi.fragment.ManualeDonatoreFragment;
-import it.nicolabrogelli.aviscerrtoguidi.fragment.MainFragment;
-import it.nicolabrogelli.aviscerrtoguidi.fragment.MapsFragment;
-import it.nicolabrogelli.aviscerrtoguidi.fragment.MeteoFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.CookiePolicyFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.IdoneitaAllaDonazioneFragment;
 import it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.IlSangueFragment;
@@ -392,7 +392,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
 
     }
 
-
+/*
     public void reconnectionGooglePlus() {
         if(mGoogleApiClient != null) {
             mGoogleApiClient.disconnect();
@@ -409,6 +409,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
             mGoogleApiClient.connect();
         }
     }
+*/
 
     /**
      * Opens the dialog
@@ -426,4 +427,6 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
             dialogStandardFragment.show(ft, "changelogdemo_dialog");
         }
     }
+
+
 }

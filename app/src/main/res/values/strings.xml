@@ -138,6 +138,30 @@
 
     <string name="changelog_title_standarddialog" translatable="false">Changelog Avis Cerreto Guidi</string>
     <string name="about_ok">OK</string>
+    <string name="centro_trasfusionale">Centro Trasfusionale</string>
+    <string name="centro_trasfusionale_ciita">Città</string>
+    <string name="centro_trasfusionale_via">Via</string>
+    <string name="centro_trasfusionale_telefono">055</string>
+    <string name="centro_trasfusionale_fax">055</string>
+    <string name="content_share_on_google">Share on Google+</string>
+    <string name="content_image_description" translatable="false"></string>
+    <string name="card_consiglio_nome" translatable="false">Cognome e Nome</string>
+    <string name="card_cosiglio" translatable="false">Ruolo</string>
+    <string name="card_consiglio_email" translatable="false">Email</string>
+    <string name="card_news_titolo" translatable="false">Titolo</string>
+    <string name="card_news_descrizone" translatable="false">descrizone della news in breve</string>
+    <string name="card_consiglio_ruolo" translatable="false">Ruolo</string>
+    <string name="avis_comunale_cerreto" translatable="false">Avis Comunale Cerreto Guidi</string>
+    <string name="donazione_perche_donare">Perchè donare</string>
+    <string name="donazione_chi_puo_donare">Chi può donare</string>
+    <string name="donazione_idoneita">Idonietà alla donazione</string>
+    <string name="donazione_come_donare">Come donare</string>
+    <string name="donazione_prima_di_donare">Prima di una donazione</string>
+    <string name="donazione_tipologie">Tipologie di donazione</string>
+    <string name="donazione_il_sangue">Il Sangue</string>
+    <string name="prenotazione_chiamaci">Chiamaci</string>
+    <string name="prenotazione_sms">Invia un SMS</string>
+    <string name="prenotazione_email">Mandaci una email</string>
 
 
 </resources>

@@ -13,7 +13,8 @@
         android:src="@drawable/splahlogo"
         android:scaleType="centerCrop"
         android:layout_above="@+id/webView"
-        android:visibility="gone"/>
+        android:contentDescription="@string/content_image_description"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/textViewTitolo"
@@ -26,33 +27,27 @@
         android:paddingTop="20dp"
         android:visibility="gone"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/webView"
         android:layout_alignStart="@+id/webView"
-        android:layout_alignRight="@+id/webView"
         android:layout_alignEnd="@+id/webView" />
 
-    <WebView
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/webView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        />
-
     <Button
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_marginBottom="5dp"
         android:layout_alignBottom="@id/webView"
         android:id="@+id/share_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Share on Google+"
+        android:text="@string/content_share_on_google"
         android:background="#DF5138"
         android:textColor="#FFFFFF"
         android:visibility="gone"
         />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

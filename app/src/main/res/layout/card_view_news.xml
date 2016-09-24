@@ -20,6 +20,7 @@
             android:id="@+id/image"
             android:scaleType="centerCrop"
             android:src="@drawable/foto"
+            android:contentDescription="@string/content_image_description"
             />
 
         <TextView
@@ -34,9 +35,8 @@
             android:alpha="0.8"
             android:textColor="#fff"
             android:textSize="20sp"
-            android:text="ASSEMBLEA ANNUALE DEI SOCI"
+            android:text="@string/card_news_titolo"
             android:layout_alignBottom="@+id/image"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
 
@@ -50,10 +50,9 @@
             android:paddingBottom="2dp"
             android:alpha="0.8"
             android:textColor="#ff272727"
-            android:textSize="15dp"
-            android:text="Questo è un riassunto scritto a mando dell'articolo che potrai leggere interamente se selezioni questa new. Buon lettura e tenetevi sempre informati"
+            android:textSize="15sp"
+            android:text="@string/card_news_descrizone"
             android:layout_below="@+id/title"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true" />
 

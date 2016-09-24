@@ -59,7 +59,7 @@
                 android:paddingBottom="2dp"
                 android:alpha="0.8"
                 android:textColor="#ff272727"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 android:text="Questo è un riassunto scritto a mando dell'articolo che potrai leggere interamente se selezioni questa new. Buon lettura e tenetevi sempre informati"
                 android:layout_below="@+id/title"
                 android:layout_alignParentLeft="true"
