@@ -1,18 +1,14 @@
 package it.nicolabrogelli.aviscerrtoguidi.fragment;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
-
 
 import it.nicolabrogelli.aviscerrtoguidi.R;
 
@@ -72,8 +68,43 @@ public class PrenotazioneFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_prenotazione, container, false);
+        final Button buttobCall = (Button)view.findViewById(R.id.Button_chiamaci);
+        final Button buttonSms = (Button)view.findViewById(R.id.Button_sendsms);
+        final Button buttonEmail = (Button)view.findViewById(R.id.Button_sendemail);
+
+        buttobCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel: +39 0571 887609"));
+                callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(callIntent);
+            }
+        });
+
+        buttonSms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        buttonEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String emailCliente = "cerretoguidi.comunale@avis.it";
+
+               final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                emailIntent.setType("plain/text");
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{emailCliente});
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Prenotazione");
+                emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Richiedo un appuntamento per la donazione di __________,  il giorno __/__/____ , nella sede di _____ alle ore __:__.");
+
+                startActivity(Intent.createChooser(emailIntent, "Invia email..."));
 
 
+            }
+        });
 
         return view;
     }

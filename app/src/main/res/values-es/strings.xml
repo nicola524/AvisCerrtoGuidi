@@ -69,7 +69,7 @@
     <string name="centro_trasfusionale_fax">055</string>
     <string name="centro_trasfusionale_telefono">055</string>
     <string name="content_share_on_google">Share on Google+</string>
-    <string name="card_consiglio_nome"></string>
+    <string name="card_consiglio_nome">Nombre completo</string>
     <string name="donazione_perche_donare">¿Por qué donar</string>
     <string name="donazione_chi_puo_donare">¿Quién puede donar</string>
     <string name="donazione_idoneita">Aptitud para la donación</string>

@@ -145,7 +145,7 @@
     <string name="centro_trasfusionale_fax">055</string>
     <string name="content_share_on_google">Share on Google+</string>
     <string name="content_image_description" translatable="false"></string>
-    <string name="card_consiglio_nome" translatable="false">Cognome e Nome</string>
+    <string name="card_consiglio_nome">Cognome e Nome</string>
     <string name="card_cosiglio" translatable="false">Ruolo</string>
     <string name="card_consiglio_email" translatable="false">Email</string>
     <string name="card_news_titolo" translatable="false">Titolo</string>

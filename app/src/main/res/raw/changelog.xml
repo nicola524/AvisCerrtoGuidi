@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog bulletedList="true">
 
+    <changelogversion versionName="1.0" changeDate="Ott 21,2016">
+        <changelogtext>[b]Fix [/b]Aggiornamento del login tramite google+.</changelogtext>
+    </changelogversion>
+
+    <changelogversion versionName="1.0" changeDate="Ott 21,2016">
+        <changelogtext>[b]Aggiornamento [/b]Modifica del protocollo da http a https per la lettura del meteo del sangue.</changelogtext>
+        <changelogtext>Risoluzione di alcuni bug.</changelogtext>
+    </changelogversion>
+
     <changelogversion versionName="0.9" changeDate="Dic 12,2015">
         <changelogtext>[b]New![/b] Implementazione del changelog per la nostra applicazione</changelogtext>
         <changelogtext>Risoluzione di alcuni bug.</changelogtext>

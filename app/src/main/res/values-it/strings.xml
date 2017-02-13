@@ -72,4 +72,5 @@
     <string name="prenotazione_chiamaci">Chiamaci</string>
     <string name="prenotazione_email">Mandaci una email</string>
     <string name="prenotazione_sms">Invia un SMS</string>
+    <string name="card_consiglio_nome">Cognome e Nome</string>
 </resources>

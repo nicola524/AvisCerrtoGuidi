@@ -15,11 +15,13 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.plus.Plus;
-import com.google.android.gms.plus.model.people.Person;
 import com.squareup.picasso.Picasso;
 
 import br.liveo.Model.HelpLiveo;
@@ -65,6 +67,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener {
 
+    private static final int RC_SIGN_IN = 9999;
     private HelpLiveo mHelpLiveo;
     private static final String TAG = "GooglePlayServicesActiv";
     private static final String KEY_IN_RESOLUTION = "is_in_resolution";
@@ -159,11 +162,16 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
     protected void onStart() {
         super.onStart();
         if (mGoogleApiClient == null) {
+
+            // Configure sign-in to request the user's ID, email address, and basic profile. ID and
+            // basic profile are included in DEFAULT_SIGN_IN.
+            GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                    .requestEmail()
+                    .build();
+
             mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .addApi(Plus.API)
-                    .addScope(Plus.SCOPE_PLUS_LOGIN)
-                    .addScope(Plus.SCOPE_PLUS_PROFILE)
-                            // Optionally, add additional APIs and scopes if required.
+                    .enableAutoManage(this, this)
+                    .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .build();
@@ -192,18 +200,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         outState.putBoolean(KEY_IN_RESOLUTION, mIsInResolution);
     }
 
-    /**
-     * Handles Google Play Services resolution callbacks.
-     */
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode) {
-            case REQUEST_CODE_RESOLUTION:
-                retryConnecting();
-                break;
-        }
-    }
+
 
     private void retryConnecting() {
         mIsInResolution = false;
@@ -220,21 +217,13 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         Log.i(TAG, "GoogleApiClient connected");
         // TODO: Start making API requests.
 
+
         if(mGoogleApiClient != null) {
             try {
-                final Person currentPerson = Plus.PeopleApi.getCurrentPerson(mGoogleApiClient);
-                if(currentPerson.hasImage() && currentPerson.getImage().hasUrl()) {
-                    final String imageUrl = currentPerson.getImage().getUrl();
-                    Picasso.with(this)
-                        .load(imageUrl)
-                        .fit()
-                        .centerCrop()
-                        .into(this.userPhoto);
 
+                    Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+                    startActivityForResult(signInIntent, RC_SIGN_IN);
 
-                    this.userName.setText(currentPerson.getDisplayName());
-
-                }
             } catch (NullPointerException ex) {
                 Log.i(TAG, ex.toString());
             }
@@ -242,7 +231,35 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
             Toast t = Toast.makeText(this, "Si è verifiacto un errore nel recuperare le informazioni da G+", Toast.LENGTH_LONG);
             t.show();
         }
-        this.userEmail.setText(Plus.AccountApi.getAccountName(mGoogleApiClient));
+
+    }
+
+    @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        /**
+         * Handles Google Play Services resolution callbacks.
+         */
+        switch (requestCode) {
+            case REQUEST_CODE_RESOLUTION:
+                retryConnecting();
+                break;
+
+            case RC_SIGN_IN:
+                GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+                if (result.isSuccess()) {
+                    GoogleSignInAccount acct = result.getSignInAccount();
+                    // Get account information
+                    this.userName.setText(acct.getDisplayName());
+                    this.userEmail.setText(acct.getEmail());
+                    Picasso.with(this)
+                            .load(acct.getPhotoUrl())
+                            .fit()
+                            .centerCrop()
+                            .into(this.userPhoto);
+                }
+                break;
+        }
 
     }
 
@@ -328,9 +345,8 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
 
             case 8:
                 mFragment = new PrenotazioneFragment();
-                mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
                 //MainActivity.this.setTitle(getString(R.string.booking));
-
+                //mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());
                 break;
 
             case 10:

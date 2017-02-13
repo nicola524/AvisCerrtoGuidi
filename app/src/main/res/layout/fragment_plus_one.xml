@@ -4,104 +4,110 @@
     android:layout_height="match_parent"
     tools:context="it.nicolabrogelli.aviscerrtoguidi.fragment.uistatiche.PlusOneFragment">
 
-    <LinearLayout
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:layout_height="fill_parent">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#FFFFFF">
-
-            <TextView
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:text="Condividi con gli amici" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/nliveo_blue_colorPrimary">
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="40dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:text="Condividere per aiutare"
-                android:textColor="#FFFFFF"/>
-
-            <TextView
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:paddingRight="40dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="19sp"
-                android:text="Condividi la nostra applicazione sul tuo profilo G+ e fai conoscere a tutti i tuoi amici AVIS Cerreto Guidi."
-                android:textColor="#FFFFFF"
-                android:layout_gravity="left" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:paddingTop="30dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:layout_gravity="center"
-            android:layout_width="fill_parent"
-            android:layout_height="100dp"
-            android:orientation="vertical">
-
-            <com.google.android.gms.plus.PlusOneButton
-                xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
-                android:id="@+id/plus_one_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                plus:size="standard"
-                plus:annotation="inline" />
-
-    </LinearLayout>
-
-        <LinearLayout
-            android:paddingTop="30dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:layout_gravity="center"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/Button_privacy"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:text="Privacy"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
 
-            <Button
-                android:id="@+id/Button_changlog"
-                android:visibility="gone"
-                android:layout_width="110dp"
-                android:layout_height="50dp"
-                android:text="ChangeLog"/>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Condividi con gli amici" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/nliveo_blue_colorPrimary">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Condividere per aiutare"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="Condividi la nostra applicazione sul tuo profilo G+ e fai conoscere a tutti i tuoi amici AVIS Cerreto Guidi."
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="left" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <com.google.android.gms.plus.PlusOneButton
+                    xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+                    android:id="@+id/plus_one_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    plus:size="standard"
+                    plus:annotation="inline" />
 
         </LinearLayout>
 
-    </LinearLayout>
+            <LinearLayout
+                android:paddingTop="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Button_privacy"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Privacy"/>
+
+                <Button
+                    android:id="@+id/Button_changlog"
+                    android:visibility="gone"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:text="ChangeLog"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
 
-
+    </ScrollView>
 
 
 </FrameLayout>
